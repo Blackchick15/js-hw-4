@@ -53,29 +53,29 @@
 // - В результаті вивести повідомлення
 // "Оформлюємо замовлення на суму [сума] зі знижкою [знижка]"
 
-let totalSpent = 5000;
-let payment = 500;
-let discount = 0;
-if(totalSpent >= 100 && totalSpent < 1000){
-    console.log('Бронзовий партнер, знижка 2%');
-     discount = 0.02;
-}else if(totalSpent >= 1000 && totalSpent < 5000){
-    console.log('Срібний партнер, знижка 5%');
-    discount = 0.05;
-} else if(totalSpent >= 5000){
-    console.log('Золотий партнер, знижка 10%');
-    discount = 0.1
-} else{
-    console.log('не партнер, знижка 0%');
-}
+// let totalSpent = 5000;
+// let payment = 500;
+// let discount = 0;
+// if(totalSpent >= 100 && totalSpent < 1000){
+//     console.log('Бронзовий партнер, знижка 2%');
+//      discount = 0.02;
+// }else if(totalSpent >= 1000 && totalSpent < 5000){
+//     console.log('Срібний партнер, знижка 5%');
+//     discount = 0.05;
+// } else if(totalSpent >= 5000){
+//     console.log('Золотий партнер, знижка 10%');
+//     discount = 0.1
+// } else{
+//     console.log('не партнер, знижка 0%');
+// }
 
-payment = payment - payment * discount;
+// payment = payment - payment * discount;
 
-console.log(`Оформлюємо замовлення на суму ${payment} зі знижкою ${discount * 100}`);
+// console.log(`Оформлюємо замовлення на суму ${payment} зі знижкою ${discount * 100}`);
 
-totalSpent += payment;
+// totalSpent += payment;
 
-console.log(`Загальна суьа потрачена в магазині ${totalSpent}`)
+// console.log(`Загальна суьа потрачена в магазині ${totalSpent}`)
 // .............................
 
 // Задача №3
@@ -84,7 +84,17 @@ console.log(`Загальна суьа потрачена в магазині ${
 // «Яка кількість місяців в році». Якщо користувач вводить 12,
 // то показати: «Вірно!», в протилежному випадку – вивести відповідь:
 // «Не вірно!»
+    // Розвязок
+    // 1) Попросить у юзера число
+    // 2) перевірети на рівність
+    // 3) На основі перевірки  запусьити if або else 
 
+    // const userNamder = Number(prompt('Яка кількість місяців в році'));
+    // if(userNamder === 12){
+    //     console.log('Вірно')
+    // }else{
+    //     console.log('Не вірно')
+    // }
 // .....................
 
 
@@ -97,16 +107,47 @@ console.log(`Загальна суьа потрачена в магазині ${
 // Якщо Тиждень - ціна 5.99
 // Якщо місяць - ціна 10.99
 // Якщо рік - ціна 100.99
+// let perid = prompt('Якій періуд підписки');
+// if(perid ==="День"){
+//     console.log('ціна 1.99')
+// }else if(perid ==="Тиждень"){
+//     console.log('ціна 5.99')
+// }else if(perid === "місяць"){
+//     console.log('ціна 10.99')
+// }else if(perid === "рік"){
+//     console.log('ціна 100.99')
+// } else{
+//     console.log('Error')
+// }
 
+// switch(perid){
+//     case"День":
+//         console.log('ціна 1.99')
+//         break;
+
+//         case"Тиждень":
+//         console.log('ціна 5.99')
+//         break;
+
+//         case"місяць":
+//         console.log('ціна 10.99')
+//         break;
+
+//         case"рік":
+//         console.log('ціна 100.99')
+//         break;
+//         default:
+//             console.log('Error')
+// }
 // .....................
 
 // Задача№5
 // Тернарний оператор
 // // Перепиши if...else з використанням тернарного оператора.
 
-// const a = 1;
-// const b = 2;
-// let result;
+const a = 1;
+const b = 2;
+let result;
 
 // if (a + b < 4) {
 //   result = 'Мало';
@@ -114,6 +155,5 @@ console.log(`Загальна суьа потрачена в магазині ${
 //   result = 'Багато';
 // }
 
-
-
-// console.log(result);
+result = ( a + b < 4) ? 'Мало' : 'Багато';
+console.log(result);
